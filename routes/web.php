@@ -6,6 +6,8 @@ use App\Http\Controllers\Toko\Profile\ProfileController;
 use App\Http\Controllers\Toko\Dashboard\DashboardController;
 use App\Http\Controllers\Toko\Store\StoreController;
 use App\Http\Controllers\Toko\Story\StoryController;
+use App\Http\Controllers\Toko\Products\ProductController;
+use App\Http\Controllers\General\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,14 +29,15 @@ Route::get('/', function () {
 //     return view('about');
 // });
 
-Route::get('/@{toko}', function($toko){
-    return "Hello ".$toko;
-});
+Route::get('/@{toko}', [PageController::class,'profil_toko']);
+// Route::get('/leaderboard', [PageController::class,'leaderboard']);
+// Route::get('/referral', [PageController::class,'referral']);
+// Route::get('/explore', [PageController::class,'explore']);
 
 // authentication routes
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', [DashboardController::class,'index'])->name('dashboard');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard/orders',[OrderController::class,'render'])->name('orders');
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard/products',[ProductController::class,'index'])->name('products');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard/store',[StoreController::class,'index'])->name('store');
 

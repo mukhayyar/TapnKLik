@@ -33,12 +33,14 @@
             </div>
 
             <div class="flex items-center justify-end mt-4">
+                <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
+                    {{ __('Belum punya akun') }}
+                </a>
                 @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
-                        {{ __('Lupa password nih?') }}
+                    <a class="underline text-sm text-gray-600 hover:text-gray-900 ml-2" href="{{ route('password.request') }}">
+                        {{ __('Lupa password akun') }}
                     </a>
                 @endif
-
                 <x-jet-button class="ml-4">
                     {{ __('Masuk') }}
                 </x-jet-button>

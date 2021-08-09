@@ -15,8 +15,8 @@
                     <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Dasbor') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('orders') }}" :active="request()->routeIs('orders')">
-                        {{ __('Pemesanan') }}
+                    <x-jet-nav-link href="{{ route('products') }}" :active="request()->routeIs('products')">
+                        {{ __('Produk') }}
                     </x-jet-nav-link>
 
                     <x-jet-nav-link href="{{ route('stories') }}" :active="request()->routeIs('stories')">
@@ -82,7 +82,7 @@
                                 <x-jet-dropdown-link href="{{ route('logout') }}"
                                          onclick="event.preventDefault();
                                                 this.closest('form').submit();">
-                                    {{ __('Log Out') }}
+                                    {{ __('Keluar') }}
                                 </x-jet-dropdown-link>
                             </form>
                         </x-slot>
