@@ -15,19 +15,22 @@ class CreateMitraInfoTable extends Migration
     {
         Schema::create('mitra_info', function (Blueprint $table) {
             $table->id();
+            $table->string('user_name',50);
             $table->string('nama_toko',50);
-            $table->string('alamat_toko_1',200);
-            $table->string('alamat_toko_2',200);
-            $table->integer('no_hp',200);
+            $table->string('gambar')->nullable();
+            $table->string('alamat_toko',200);
+            $table->integer('no_hp');
             $table->string('email');
-            $table->string('kota',50);
             $table->string('provinsi',50);
+            $table->string('kabupaten',50);
+            $table->string('kecamatan',50);
             $table->integer('kode_pos');
-            $table->string('negara',50);
             $table->string('jenis_penjualan',100);
             $table->string('tentang_toko',150);
-            $table->string('payment_methods',150);
-            $table->timestamps();
+            $table->json('payment_methods');
+            $table->string('voucher_available',150);
+            $table->integer('user_id');
+            $table->date('regist_date');
         });
     }
 

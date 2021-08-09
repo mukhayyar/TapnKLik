@@ -16,11 +16,11 @@ class CreatePhotoTable extends Migration
         Schema::create('photo', function (Blueprint $table) {
             $table->id();
             $table->integer('album_id');
-            $table->integer('member_id');
-            $table->string('title',120);
-            $table->string('description',255);
+            $table->integer('user_id');
+            $table->string('judul',120);
+            $table->string('deskripsi',255);
             $table->integer('view');
-            $table->string('image_path',50);
+            $table->string('gambar',50);
             $table->date('upload_date');
         });
     }
