@@ -21,8 +21,10 @@ class CreateMitraInfoTable extends Migration
             $table->string('tentang_toko',150);
             $table->string('alamat_toko',200);
             $table->string('gambar')->nullable();
-            $table->integer('no_hp');
+            $table->string('no_hp');
             $table->string('email');
+            $table->date('buka')->default(now());
+            $table->date('tutup')->default(now());
             $table->string('payment_method');
             $table->string('jenis_penjualan',100);
             $table->date('regist_date');

@@ -11,11 +11,11 @@ class StoreController extends Controller
 {
     public function index()
     {
-        $user = Auth::user();
-        $toko = Profil::where('id',$user->id)->first();
-        if(is_null($toko)){
-            return redirect('dashboard/store/profile/form');
+        $active_user = Auth::user();
+        $mitra_profil = Profil::where('user_id',$active_user->id)->first();
+        if(is_null($mitra_profil)){
+            return redirect('dashboard/store/form');
         }
-        return view('store');
+        return view('store',\compact('active_user'));
     }
 }

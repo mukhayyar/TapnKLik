@@ -15,15 +15,10 @@ class ReferralProgram extends Migration
     {
         Schema::create('referral_program', function (Blueprint $table) {
             $table->id();
-            $table->string('product_nama');
-            $table->string('product_deskripsi');
-            $table->integer('mitra_id');
-            $table->integer('category_id');
-            $table->integer('harga');
-            $table->string('stok_unit');
-            $table->boolean('ketersediaan_produk');
-            $table->string('gambar');
-            $table->string('note');
+            $table->string('email')->unique();
+            $table->string('no_hp');
+            $table->string('nama_panggilan');
+            $table->string('referral_code')->unique();
         });
     }
 

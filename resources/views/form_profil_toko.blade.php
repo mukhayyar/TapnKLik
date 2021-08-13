@@ -22,7 +22,7 @@
                         </div>
                         <div>
                             <x-jet-label for="alamat" value="{{ __('Alamat') }}" />
-                            <x-jet-input id="alamat" class="block mt-1 w-full" type="text" placeholder="Contoh: Komplek Pondok Pesantren Darul Ulum, Depan Al Husna" name="nama" :value="old('nama')" required autofocus />
+                            <x-jet-input id="alamat" class="block mt-1 w-full" type="text" placeholder="Contoh: Komplek Pondok Pesantren Darul Ulum, Depan Al Husna" name="alamat" :value="old('nama')" required autofocus />
                         </div>
                         <div>
                             <x-jet-label for="no_hp" value="{{ __('No HP') }}" />

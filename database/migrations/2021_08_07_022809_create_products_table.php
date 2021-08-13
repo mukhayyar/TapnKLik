@@ -18,11 +18,10 @@ class CreateProductsTable extends Migration
             $table->string('product_nama');
             $table->string('product_deskripsi');
             $table->integer('mitra_id');
-            $table->integer('category_id');
             $table->integer('harga');
             $table->string('stok_unit');
             $table->boolean('ketersediaan_produk');
-            $table->string('gambar');
+            $table->string('gambar')->nullable();
             $table->string('note');
         });
     }

@@ -10,7 +10,7 @@ use App\Models\Toko\Profil;
 
 class DashboardController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $user = Auth::user();
         // $toko = Profil::find('id',$user);

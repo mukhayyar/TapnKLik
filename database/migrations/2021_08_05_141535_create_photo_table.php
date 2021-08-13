@@ -19,7 +19,6 @@ class CreatePhotoTable extends Migration
             $table->integer('user_id');
             $table->string('judul',120);
             $table->string('deskripsi',255);
-            $table->integer('view');
             $table->string('gambar',50);
             $table->date('upload_date');
         });

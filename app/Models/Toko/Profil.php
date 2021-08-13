@@ -8,7 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Profil extends Model
 {
     use HasFactory;
-
+    public $timestamps = false;
     protected $table = 'mitra_info';
-    // protected $fillable = ['user_name','nama_toko','gambar','alamat_toko','no_hp','email','provinsi','kabupaten','kecamatan','kode_pos','jenis_penjualan','tentang_toko','payment_methods','voucher_available','customer_id','regist_date'];
+
+    public function cek_daftar_mitra($user_id)
+    {
+        if(is_null(Profil::where('user_id',$user_id)->get())){
+            return false;
+        } return true;
+    }
 }

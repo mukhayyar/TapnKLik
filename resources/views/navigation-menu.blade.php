@@ -26,6 +26,10 @@
                     <x-jet-nav-link href="{{ route('store') }}" :active="request()->routeIs('store')">
                         {{ __('Toko') }}
                     </x-jet-nav-link>
+
+                    <x-jet-nav-link href="{{ route('referral') }}" :active="request()->routeIs('store')">
+                        {{ __('Referral') }}
+                    </x-jet-nav-link>
                 </div>
             </div>
 
@@ -58,7 +62,7 @@
                                 {{ __('Manajemen Akun') }}
                             </div>
 
-                            <x-jet-dropdown-link href="/dashboard/store/profile">
+                            <x-jet-dropdown-link href="/dashboard/store">
                                 {{ __('Profil Toko') }}
                             </x-jet-dropdown-link>
 

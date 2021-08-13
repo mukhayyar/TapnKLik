@@ -111,12 +111,12 @@
     </g>
     <g>
     </g></svg>
-            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold"><a href="https://tailwindcss.com/">Upload Barang Jualan</a></div>
+            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold">Upload Barang Jualan</div>
         </div>
 
         <div class="ml-12">
 
-            <a href="/dashboard/store">
+            <a href="/dashboard/products">
                 <div class="mt-3 flex items-center text-sm font-semibold text-indigo-700">
                         <div>Upload Barang Jualan</div>
 
@@ -131,7 +131,7 @@
     <div class="p-6 border-t border-gray-200 md:border-t-0 md:border-l">
         <div class="flex items-center">
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-400"><path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold"><a href="https://laracasts.com">Upload Cerita</a></div>
+            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold">Upload Cerita</div>
         </div>
 
         <div class="ml-12">
@@ -201,13 +201,13 @@
             <g>
             </g>
             </svg>
-            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold"><a href="https://laravel.com/docs">Profil Toko</a></div>
+            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold">Profil Toko</div>
         </div>
 
         <div class="ml-12">
 
 
-            <a href="/dashboard/store/profile">
+            <a href="/dashboard/store">
                 <div class="mt-3 flex items-center text-sm font-semibold text-indigo-700">
                         <div>Lihat Toko</div>
 
@@ -237,14 +237,14 @@
             c-0.174,0.695-0.676,1.109-1.059,1.037c-0.498,1.51-1.476,3.425-2.863,4.541c-0.193,0.156-0.396,0.299-0.609,0.42
             c-0.33,0.189-0.68,0.328-1.047,0.41c-0.236,0.053-0.478,0.088-0.729,0.088c-0.257,0-0.502-0.035-0.743-0.09
             c-0.372-0.082-0.726-0.219-1.058-0.408c-0.212-0.123-0.414-0.266-0.609-0.422C11.591,17.451,10.634,15.557,10.139,14.014z"></path></svg>
-            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold">Pengguna</div>
+            <div class="ml-4 text-lg text-gray-600 leading-7 font-semibold">Referral</div>
         </div>
 
         <div class="ml-12">
 
-            <a href="/user/profile">
+            <a href="{{route('referral')}}">
                 <div class="mt-3 flex items-center text-sm font-semibold text-indigo-700">
-                        <div>Ubah Pengaturan Pengguna</div>
+                        <div>Jadi Referral</div>
 
                         <div class="ml-1 text-indigo-500">
                             <svg viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
